@@ -49,15 +49,5 @@ document.getElementById("crypto").style.display = "none";
         Total PS4 Jailbreak Visitors
     </div>
 </div>
-<script>
-    fetch('https://api.countapi.xyz/hit/cornholiowk-ps4/visits')
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById('visitor-count').innerText = data.value;
-        })
-        .catch(error => {
-            document.getElementById('visitor-count').innerText = '0';
-        });
-</script>
 </body>
 </html>
